@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+  	/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+  </style>
+
+  </head>
+<body>
+<div class="container">
+    <div class="row">
+      
+        <div class="form-group col-lg-4">
+            <div class="form-group has-feedback">
+            	<span class="glyphicon glyphicon-search form-control-feedback"></span>
+                  <input type="text" class="form-control"  placeholder="Search"/>
+                
+            </div>
+            <div class="inner-addon left-addon">
+      <i class="glyphicon glyphicon-search"></i>
+      <input type="text" class="form-control" placeholder="Search" />
+    </div>
+        </div>
+               
+       
+
+</div>
+
+</body>
+</html>
